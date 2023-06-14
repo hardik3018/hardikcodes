@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactDOM from 'react-dom';
 import { NavBar } from './components/navBar';
 import './bootstrap/dist/css/bootstrap.min.css'
 import { Banner } from './components/banner';

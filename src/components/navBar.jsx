@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from 'react-bootstrap/esm/Container';
+import Nav from 'react-bootstrap/esm/Nav';
+import Navbar from 'react-bootstrap/esm/Navbar';
+import NavDropdown from 'react-bootstrap/esm/NavDropdown';
 import logo from '../assets/images/logo.svg'
 import gmail from '../assets/images/gmail.svg'
 import linkedin from '../assets/images/linked in.svg'
