@@ -1,12 +1,29 @@
 
-import { useState, useEffect } from "react"; // to animate ( delete and type ) --> what's useState & useEffect
+import { useState, useEffect, useCallback } from "react"; // to animate ( delete and type ) --> what's useState & useEffect
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/images/header-img.svg";
+
+import {Quoted} from "./quotes"
+import headerImg from "../assets/images/header-img.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons'; // importing arrow icon
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Display from "./display";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
+import particlesConfig from './ParticlesConfig.js';
+import AboutMe from "./AboutMe";
+
+import { Link } from 'react-router-dom';
 // import 'animate.css';
 // import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
+
+  //for animation  on scroll
+  useEffect (() =>{
+    AOS.init({duration:2000});
+  },[])
 
   //loopNum will indicate at which word i am at or to display which word
   const [loopNum, setLoopNum] = useState(0);
@@ -31,8 +48,8 @@ export const Banner = () => {
   const toRotate = [ "Developer", "Designer", "Creator" ];
   
 
-  //how much time to be passed btw two alphabets animating
-  const period = 300;
+  //how much time to be passed btw two words animating
+  const period = 600;
   
 
 
@@ -89,21 +106,52 @@ export const Banner = () => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
+  const particlesInit = useCallback(async engine => {
+    console.log(engine);
+    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(engine);
+    // await loadSlim(engine);
+}, []);
+
+const particlesLoaded = useCallback(async container => {
+    await console.log(container);
+}, []);
 
   return (
-    <section className="banner" id="home">
-      <Container>
+    <>
+
+      
+    <section className="banner" id="home" style={{ position: 'relative', overflow: "hidden"  }} >
+
+    <div  style={{ position: 'fixed'}}>
+      <Particles
+            id="tsparticles"
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={particlesConfig}
+        />
+      </div>
+      
+      <Container className="foreground" >
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
+          <Col className="title" xs={12} md={6} xl={7}>
             {/* <TrackVisibility> */}
            
-              <div >
-                <h1>Hi! I'm Hardik <br></br><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Developer", "Designer", "Creator" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+              <div data-aos='fadeup'>
+                <h1>Hi! I'm </h1> <h1 class='txt-grad'>Hardik Chawda</h1>  <h1 ><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Developer", "Designer", "Creator" ]'><span className="wrap">{text}</span></span></h1>
+                  <button onClick={()=>{
+                    console.log('connect');
+                    const element = document.getElementById('connect');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }}}>
+                      
+                      Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={6} xl={5} data-aos='fadeup'>
              
                 <div>
                   <img src={headerImg} alt="Header Img"/>
@@ -111,6 +159,18 @@ export const Banner = () => {
           </Col>
         </Row>
       </Container>
+      <hr></hr>
+      <AboutMe/>
+      <Display/>
+      <Link to="/Achievement" style={{textDecoration:'none', color:'white'}} onClick={() => window.scrollTo(0, 0)}>
+                    
+      <div className='Achiv d-flex justify-content-center ' >
+              <h1 style={{color:'white' , text}}> Achievement </h1>
+            </div>
+            </Link>
+      <Quoted/>
     </section>
+
+    </>
   )
 }

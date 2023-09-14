@@ -1,20 +1,17 @@
 import { useEffect, useState } from 'react';
-
-import Container from 'react-bootstrap/container';
+import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
 import logo from '../assets/images/logo.svg'
-import gmail from '../assets/images/gmail.svg'
-import linkedin from '../assets/images/linked in.svg'
-
-
+import { Link } from 'react-router-dom';
+import {BsDownload} from 'react-icons/bs'
+import {BsPersonFill} from 'react-icons/bs'
+import {BiLogoLinkedin} from 'react-icons/bi'
+import {BiLogoGmail} from 'react-icons/bi'
+ 
 export const NavBar = () => {
     
-    // to set what link we are on
-    const [activeLink, setActiveLink]=useState('home');
-
     //  to set color state of navbar while scrolling
     const [ scrolled, seScrolled ] = useState(false);
 
@@ -36,10 +33,12 @@ export const NavBar = () => {
         return() => window.removeEventListener("scroll",onScroll)
     },[])
 
-
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value);
-    }
+    const handleClickScroll = () => {
+        const element = document.getElementById('connect');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
 
 
     return(
@@ -49,56 +48,43 @@ export const NavBar = () => {
             }>
             
             <Container>
-                <Navbar.Brand href="#home" className='navbar-brand'>
+                <Navbar.Brand href="/" className='navbar-brand'>
                     <img src={logo} alt='Logo'></img>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
+
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse  id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <Nav.Link href="#home" className={
-                        // to check and set active link
-                        activeLink==='home'?'active navbar-link':'navbar-link'
-                    }
-                    onClick={()=> onUpdateActiveLink('home')}
-                    >
+                    <Link to="/"  onClick={() => window.scrollTo(0, 0)} className="navbar-link">
                         Home
-                    </Nav.Link>
-                    <Nav.Link href="#skills" className={
-                        // to check and set active link
-                        activeLink==='skills'?'active navbar-link':'navbar-link'
-                    }
-                    onClick={()=> onUpdateActiveLink('skills')}
-                    >
-                        Skills</Nav.Link>
-                    <Nav.Link href="#experience" className={
-                        // to check and set active link
-                        activeLink==='experience'?'active navbar-link':'navbar-link'
-                    }
-                    onClick={()=> onUpdateActiveLink('experience')}
-                    >
-                     Experience</Nav.Link>
-                    {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">
-                        Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">
-                        Separated link
-                    </NavDropdown.Item>
-                    </NavDropdown> */}
+                    </Link>
+                    <Link to="/Skills" onClick={() => window.scrollTo(0, 0)} className="navbar-link" >
+                        Skills</Link>
+                    <Link to="/Experience" onClick={() => window.scrollTo(0, 0)} className="navbar-link">
+                     Experience & Education</Link>
+                     <Link to="/Project" onClick={() => window.scrollTo(0, 0)} className="navbar-link">
+                     Projects</Link>
+                    
                 </Nav>
                 <span className="navbar-text">
                     <div className="social-icon">
-                        <a href='#'><img src={linkedin}></img></a>
-                        <a href='#'><img src={gmail}></img></a>
+                        <a href='https://www.linkedin.com/in/hardik-chawda-9867a5173/' target="_blank"><BiLogoLinkedin className='icon'/></a>
+                        <a href='mailto:hardik.mca21.du@gmail.com' target="_blank"><BiLogoGmail className='icon'/></a>
                     </div>
+
+                    <a href="https://drive.google.com/file/d/1tT2aX0nt2WYZndvgDmo2oUb9RJT9SAIv/view" target="_blank" download="Hardik_Chawda_Resume" >
                     <button className="vvd" onClick={()=>console.log('connect')}>
-                        <span>Let's Connect</span> 
+                        <BsDownload className='icon'/>
+                        <span className="navbar-link" >&nbsp; Resume</span> 
                     </button>
+                    </a>
+                    <button className="vvd" onClick={handleClickScroll}>
+                        <BsPersonFill className='icon'/>
+                        <span className="navbar-link" >&nbsp; Contact Me</span> 
+                    </button>
+                    
                 </span>
                 </Navbar.Collapse>
             </Container>

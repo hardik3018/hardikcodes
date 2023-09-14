@@ -1,0 +1,516 @@
+Thu Jul 27 19:18:24 2023
+Emscripten-3.1.24-wasm32-32bit
+Ren'Py 8.1.0.23020306n
+ 
+
+Bootstrap to the start of init.init. took 0.00s
+Early init. took 0.01s
+Loader init. took 0.26s
+Loading error handling. took 0.21s
+
+Loading script...
+Loading script. took 22.63s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.01s
+Faled to initialize steam: ModuleNotFoundError("No module named '_ctypes'")
+Set script version to: (8, 1, 0)
+ - Init at renpy/common/00images.rpy:55 took 0.67900 s.
+Running init code. took 1.17s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 1.07s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Dump and make backups. took 0.01s
+Cleaning cache. took 0.01s
+Making clean stores. took 0.01s
+Initial gc. took 0.49s
+DPI scale factor: 1.000000
+Creating interface object. took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.55s
+Build styles took 0.01s
+Load screen analysis took 0.01s
+Analyze screens took 0.56s
+Save screen analysis took 0.16s
+Prepare screens took 2.09s
+Save pyanalysis. took 0.25s
+Save bytecode. took 0.51s
+Running _start took 0.02s
+Interface start. took 0.95s
+
+Initializing gles2 renderer:
+primary display bounds: (0, 0, 1450, 816)
+swap interval: 1 frames
+Windowed mode.
+UGUU couldn't find b'glFlushMappedBufferRange': b'No OpenGL context has been made current'
+UGUU couldn't find b'glGetBufferPointerv': b'No OpenGL context has been made current'
+UGUU couldn't find b'glMapBufferRange': b'No OpenGL context has been made current'
+UGUU couldn't find b'glUnmapBuffer': b'No OpenGL context has been made current'
+Vendor: "b'WebKit'"
+Renderer: b'WebKit WebGL'
+Version: b'OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium))'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1450, 816) drawable=(1921, 1081)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1169, 658) drawable=(1548, 871)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1450, 816) drawable=(1921, 1081)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1169, 658) drawable=(1548, 871)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1450, 816) drawable=(1921, 1081)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1169, 658) drawable=(1548, 871)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1450, 816) drawable=(1921, 1081)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1169, 658) drawable=(1548, 871)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1450, 816) drawable=(1921, 1081)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "/game/scripts/SEASON 1/medbay01.rpyc", line 821, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/medbay01.rpy", line 2409, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/medbay01.rpy", line 2409, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/medbay01.rpyc", line 821, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/medbay01.rpy", line 2409, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/medbay01.rpy", line 2409, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/medbay01.rpyc", line 822, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/medbay01.rpy", line 2410, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 69, in set_perform
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/medbay01.rpy", line 2410, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 69, in set_perform
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+Screen sizes: virtual=(1920, 1080) physical=(1169, 658) drawable=(1548, 871)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1450, 816) drawable=(1921, 1081)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "/game/scripts/SEASON 1/corridor01.rpyc", line 530, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/corridor01.rpy", line 2118, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/corridor01.rpy", line 2118, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/corridor01.rpyc", line 531, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/corridor01.rpy", line 2119, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 69, in set_perform
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/corridor01.rpy", line 2119, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 69, in set_perform
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/corridor01.rpyc", line 532, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/corridor01.rpy", line 2120, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 73, in set_receive
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/corridor01.rpy", line 2120, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 73, in set_receive
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+Screen sizes: virtual=(1920, 1080) physical=(1169, 658) drawable=(1548, 871)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1450, 816) drawable=(1921, 1081)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 1272, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 2860, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 2860, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 1273, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 2861, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 2861, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 1274, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 2862, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 2862, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 1490, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 3078, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 3078, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 1491, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 3079, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 3079, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 1492, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 3080, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 3080, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 1493, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 3081, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 3081, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 1651, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 3239, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 3239, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 2282, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 3870, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 3870, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 2282, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 3870, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 3870, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 2547, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 4135, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 4135, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 2669, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 4257, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 4257, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 2670, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 4258, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 73, in set_receive
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 4258, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 73, in set_receive
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 3138, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 4726, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 4726, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/decon01.rpyc", line 3139, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/decon01.rpy", line 4727, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 73, in set_receive
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/decon01.rpy", line 4727, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 73, in set_receive
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/corridor01_redux.rpyc", line 613, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/corridor01_redux.rpy", line 2201, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/corridor01_redux.rpy", line 2201, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/corridor01_redux.rpyc", line 614, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/corridor01_redux.rpy", line 2202, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 69, in set_perform
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/corridor01_redux.rpy", line 2202, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 69, in set_perform
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/corridor01_redux.rpyc", line 613, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/corridor01_redux.rpy", line 2201, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/corridor01_redux.rpy", line 2201, in <module>
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 85, in set
+  File "game/scripts/UI & Background/personnelfiles.rpy", line 72, in _mask
+NameError: name 'reduce' is not defined
+
+Full traceback:
+  File "/game/scripts/SEASON 1/corridor01_redux.rpyc", line 614, in script
+  File "/renpy/ast.py", line 1132, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/renpy/python.py", line 1085, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/SEASON 1/corridor01_redux.rpy", line 2202, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 69, in set_perform
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
+
+While running game code:
+  File "game/scripts/SEASON 1/corridor01_redux.rpy", line 2202, in <module>
+  File "game/scripts/UI & Background/player.rpy", line 69, in set_perform
+  File "game/scripts/UI & Background/player.rpy", line 56, in _mask
+NameError: name 'reduce' is not defined
